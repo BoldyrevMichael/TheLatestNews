@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/webjars/bootstrap/4.1.3/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="/static/css/sticky-footer-navbar.css"
           th:href="@{/static/css/sticky-footer-navbar.css}"/>
-
+    
     <!-- Own CSS -->
     <link rel="stylesheet" href="/static/css/custom.css" th:href="@{/static/css/custom.css}"/>
 
@@ -21,7 +21,7 @@
 <header>
     <!-- Fixed navbar -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="/templates/home-page.html" th:href="@{'/home-page'}">TheLatestNews</a>
+        <a class="navbar-brand" href="/templates/home-page.html" th:href="@{'/'}">TheLatestNews</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -29,15 +29,15 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a th:class="${'nav-link'+${#httpServletRequest.requestURI.contains('home-page') ? 'active' : ''}}"
-                       href="/templates/home-page.html" th:href="@{'/home-page'}">Главная <span
+                    <a th:class="'nav-link'+(${#httpServletRequest.requestURI.contains('home-page')} ? ' active' : '')"
+                       href="/templates/home-page.html" th:href="@{'/'}">Главная <span
                             class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Добавить статью</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a th:class="${'nav-link dropdown-toggle'+${#httpServletRequest.requestURI.contains('list-of-news-by-category-id') ? 'active' : ''}}"
+                    <a th:class="${'nav-link dropdown-toggle'+'active'}"
                        data-toggle="dropdown" href="#" role="button"
                        aria-haspopup="true" aria-expanded="false">Категории</a>
                     <div class="dropdown-menu">
@@ -78,7 +78,7 @@
 
 <!-- Begin page content -->
 <main role="main" class="container">
-    <h1 class="mt-5">Объявления</h1>
+    <h1 class="mt-5">Новости</h1>
     <div class="list-group flex-row flex-wrap d-flex p-2 bd-highlight justify-content-sm-between" id="list-of-ad">
     </div>
     <nav aria-label="Page navigation">
@@ -100,7 +100,7 @@
 <script src="/webjars/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <script src="/webjars/jquery/3.3.1-1/jquery.min.js"></script>
 <script th:attr="src=@{/static/js/tether.min.js}"></script>
-<script th:attr="src=@{/static/js/jquery.twbsPagination.min.js}"></script>
+<script th:attr="src=@{${#httpServletRequest.getContextPath()}+'/static/js/jquery.twbsPagination.min.js'}"></script>
 
 <!-- возможно, понадобится позже
 <script>
