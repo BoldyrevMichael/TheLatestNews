@@ -18,6 +18,11 @@ public class HomePageController {
     private CategoryRepository categoryRepository;
 
     @RequestMapping("/")
+    public String redirectWelcome() {
+        return "redirect:/home-page";
+    }
+
+    @RequestMapping("/home-page")
     public String welcome(Map<String, Object> model) {
         model.put("listOfCategory", categoryRepository.getListOfCategory());
         model.put("listOfArticle", articleRepository.getListOfArticle());

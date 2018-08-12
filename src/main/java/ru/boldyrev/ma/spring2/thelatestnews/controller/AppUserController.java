@@ -26,6 +26,6 @@ public class AppUserController {
     @RequestMapping(value = {"/registration"}, method = RequestMethod.POST)
     public String appUserSaveAfteCreate(@ModelAttribute("appUser") AppUser appUser) {
         appUserRepository.merge(appUser);
-        return "redirect:/";
+        return "redirect:/home-page";
     }
 }
