@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head></head>
+<body>
+<footer th:fragment="footer" class="footer">
+    <div class="container">
+        <span class="text-muted" th:text="${#dates.year(#dates.createNow())}+'&nbsp;&copy;&nbsp;Все права защищены.'">&nbsp;&copy;&nbsp;Все права защищены.</span>
+    </div>
+</footer>
+</body>
+</html>
