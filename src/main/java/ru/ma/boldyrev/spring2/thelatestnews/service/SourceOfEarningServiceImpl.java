@@ -29,17 +29,17 @@ public class SourceOfEarningServiceImpl implements SourceOfEarningService {
         return sourceOfEarningRepository.getOne(sourceOfEarningId);
     }
 
-    @Override
+/*    @Override
     @Transactional(readOnly = true)
-    public List<SourceOfEarning> getListOfSourceOfEarningByCategoryOfSourceOfEarningId(String categoryOfSourceOfEarningId) {
-        return sourceOfEarningRepository.getListOfSourceOfEarningByCategoryOfSourceOfEarningId(categoryOfSourceOfEarningId);
+    public List<SourceOfEarning> getAllByCategoryOfSourceOfEarningId(String categoryOfSourceOfEarningId) {
+        return sourceOfEarningRepository.getAllByCategoryOfSourceOfEarningId(categoryOfSourceOfEarningId);
     }
 
     @Override
     @Transactional(readOnly = true)
-    public List<SourceOfEarning> getListOfSourceOfEarningByExecutionDate(Date executionDataOfSourceOfEarningId) {
-        return sourceOfEarningRepository.getListOfSourceOfEarningByExecutionDate(executionDataOfSourceOfEarningId);
-    }
+    public List<SourceOfEarning> getAllByExecutionDate(Date executionDataOfSourceOfEarningId) {
+        return sourceOfEarningRepository.getAllByExecutionDate(executionDataOfSourceOfEarningId);
+    }*/
 
     @Override
     @Transactional
