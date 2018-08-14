@@ -13,9 +13,9 @@ public interface SourceOfEarningService {
 
     SourceOfEarning findSourceOfEarningById(String sourceOfEarningId);
 
-    List<SourceOfEarning> getListOfSourceOfEarningByCategoryOfSourceOfEarningId(String categoryOfSourceOfEarningId);
+/*    List<SourceOfEarning> getAllByCategoryOfSourceOfEarningId(String categoryOfSourceOfEarningId);
 
-    List<SourceOfEarning> getListOfSourceOfEarningByExecutionDate(Date executionDataOfSourceOfEarningId);
+    List<SourceOfEarning> getAllByExecutionDate(Date executionDataOfSourceOfEarningId);*/
 
     void persist(SourceOfEarning sourceOfEarning);
 

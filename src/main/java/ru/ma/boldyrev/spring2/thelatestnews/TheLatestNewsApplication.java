@@ -5,8 +5,9 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration;
 
-@EnableAutoConfiguration
-@SpringBootApplication(exclude = JpaRepositoriesAutoConfiguration.class)
+@EnableAutoConfiguration//без этой аннотации ошибка
+//@SpringBootApplication(exclude = JpaRepositoriesAutoConfiguration.class) - работает и без (exclude = JpaRepositoriesAutoConfiguration.class)
+@SpringBootApplication
 public class TheLatestNewsApplication {
 
     public static void main(String[] args) {
