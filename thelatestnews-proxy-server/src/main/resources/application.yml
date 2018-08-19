@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: thelatestnews-proxy-server
+
+server:
+  port: 7777
+
+zuul:
+  routes:
+    cloud-health-checker:
+      path: /cloud-health-check/**
+      serviceId: thelatestnews-cloud-healthchecker
+
+    cloud-health-checker-client:
+      path: /cloud-health-check-client/**
+      serviceId: thelatestnews-cloud-healthchecker-client
+
+
+ribbon:
+  eureka:
+    enabled: true

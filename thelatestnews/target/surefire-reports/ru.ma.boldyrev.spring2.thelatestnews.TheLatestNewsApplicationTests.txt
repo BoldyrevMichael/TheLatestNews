@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: ru.ma.boldyrev.spring2.thelatestnews.TheLatestNewsApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.558 s - in ru.ma.boldyrev.spring2.thelatestnews.TheLatestNewsApplicationTests
