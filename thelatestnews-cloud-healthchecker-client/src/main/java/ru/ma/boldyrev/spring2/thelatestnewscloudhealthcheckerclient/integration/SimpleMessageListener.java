@@ -12,7 +12,7 @@ public class SimpleMessageListener {
 
     private static final Logger LOGGER = Logger.getLogger(SimpleMessageListener.class.getSimpleName());
 
-//    @ServiceActivator(inputChannel = SimpleMessageGateway.CHANEL)
+    //    @ServiceActivator(inputChannel = SimpleMessageGateway.CHANEL)
     public void handler(final SimpleMessage message, @Header("REQUEST_ID") final String reqId) {
 //        LOGGER.info(reqId);
 //        LOGGER.info("SimpleMessage: " + message.getDate());
