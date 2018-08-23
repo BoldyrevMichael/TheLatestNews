@@ -4,7 +4,6 @@ import org.jetbrains.annotations.NotNull;
 import ru.ma.boldyrev.spring2.thelatestnews.entity.CategoryOfSourceOfEarning;
 import ru.ma.boldyrev.spring2.thelatestnews.entity.SourceOfEarning;
 
-import java.util.Date;
 import java.util.List;
 
 public interface SourceOfEarningService {

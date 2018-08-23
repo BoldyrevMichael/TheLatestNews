@@ -8,7 +8,6 @@ import ru.ma.boldyrev.spring2.thelatestnews.entity.CategoryOfSourceOfEarning;
 import ru.ma.boldyrev.spring2.thelatestnews.entity.SourceOfEarning;
 import ru.ma.boldyrev.spring2.thelatestnews.repository.SourceOfEarningRepository;
 
-import java.util.Date;
 import java.util.List;
 
 @Service

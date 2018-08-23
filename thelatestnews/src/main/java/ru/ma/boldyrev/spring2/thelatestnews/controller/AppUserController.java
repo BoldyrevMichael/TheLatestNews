@@ -2,17 +2,17 @@ package ru.ma.boldyrev.spring2.thelatestnews.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
 import ru.ma.boldyrev.spring2.thelatestnews.entity.AppUser;
 import ru.ma.boldyrev.spring2.thelatestnews.repository.AppUserRepository;
 
 import java.util.Map;
 
 @RefreshScope
-@RestController
+@Controller
 public class AppUserController {
 
     @Autowired
