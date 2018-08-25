@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: ru.ma.boldyrev.spring2.thelatestnews.DateDtoControllerTest
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.858 s - in ru.ma.boldyrev.spring2.thelatestnews.DateDtoControllerTest
